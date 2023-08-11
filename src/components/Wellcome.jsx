@@ -1,15 +1,15 @@
 import React from 'react'
 
 const Wellcome = () => {
-  // get email form localstorge
+  // get name form localstorge
   const email = localStorage.getItem('email');
   return (
 
     <div className='wellcome'>
         <h1 >
-            Welcome {email} to the new world of web development!
-            
+         {email}
         </h1>
+        <h3>Welcometo the new world of web development!</h3>
     </div>
   )
 }
