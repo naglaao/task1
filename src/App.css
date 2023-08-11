@@ -1,0 +1,151 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://www.yudiz.com/codepen/animation-form/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: var(--textFamily);
+    font-size: var(--fontSize);
+}
+
+:root {
+
+
+    --bgColor: #edf3f986;
+    --textColor: #000;
+    --textColorLight: #eeecec;
+    --primaryColor: #808000;
+
+
+    --headFamily: Montserrat;
+    --textFamily: Poppins;
+
+    --fontSize: 1.3rem;
+
+    --transition: all 0.3s ease;
+
+
+
+}
+
+
+
+/* heading */
+h2 {
+    color: var(--colorGrayOne);
+    font-family: var(--headFamily);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 120%;
+
+}
+
+
+a {
+    color: var(--textColor);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--primaryColor);
+
+}
+
+/*________________________ global class __________________________________________*/
+
+.register-form {
+    width: 700px;
+    height: 800px;
+    background-color: var(--bgColor);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.input-wraper {
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px var(--primaryColor) solid;
+
+}
+
+
+.input-wraper input {
+    font-size: 1.3rem;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    background-color: #edf3f9;
+    color: var(--textColor);
+}
+
+
+
+
+.input-wraper i {
+    font-size: 1.3rem;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    color: var(--textColor);
+}
+
+.err-message {
+    width: 450px;
+    color: red;
+    font-size: small;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    left: 0%;
+    bottom: -80%;
+
+}
+
+
+.action-button {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    height: 3rem;
+    width: 12rem;
+    padding: .8rem;
+    font: inherit;
+    font-weight: 500;
+    color: var(--textColorLight);
+    background-color: var(--primaryColor);
+    transition: var(--transition);
+}
+
+
+
+.action-button:hover i {
+    transform: translateX(100%);
+}
+
+.wellcome{
+
+    color:var(--primaryColor)
+
+}
